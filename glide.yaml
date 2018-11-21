@@ -1,0 +1,9 @@
+package: github.com/sec51/docker-registry-client
+import:
+- package: github.com/docker/distribution
+  version: ~2.7.0-rc.0
+  subpackages:
+  - manifest/schema1
+  - manifest/schema2
+- package: github.com/opencontainers/go-digest
+  version: ~1.0.0-rc1
