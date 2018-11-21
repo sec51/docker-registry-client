@@ -1,9 +1,17 @@
 package: github.com/sec51/docker-registry-client
 import:
 - package: github.com/docker/distribution
-  version: ~2.7.0-rc.0
+  version: ~2.6.2
   subpackages:
   - manifest/schema1
   - manifest/schema2
 - package: github.com/opencontainers/go-digest
   version: ~1.0.0-rc1
+- package: github.com/sirupsen/logrus
+  version: master
+  subpackages:
+  - formatters/logstash
+- package: github.com/Sirupsen/logrus
+  version: master
+  repo: git@github.com:/sirupsen/logrus
+  vcs: git

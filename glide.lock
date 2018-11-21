@@ -1,29 +1,48 @@
-hash: e68a0381c0fc3b678053843f821693607d97aa7f5ca63f37a13d2f758177c4fb
-updated: 2018-11-21T13:24:24.140137+01:00
+hash: 09011de0a59e2cf86751cccc6b396c2e1135f51419d27ecf69d15dfc1dca2586
+updated: 2018-11-21T13:30:23.453411+01:00
 imports:
 - name: github.com/docker/distribution
-  version: 17b3ff188dfde7d5b59a94ab99e6a967b3a59563
+  version: 48294d928ced5dd9b378f7fd7c6f5da3ff3f2c89
   subpackages:
-  - digestset
+  - context
+  - digest
   - manifest
   - manifest/schema1
   - manifest/schema2
   - reference
+  - uuid
 - name: github.com/docker/libtrust
   version: fa567046d9b14f6aa788882a950d69651d230b21
+- name: github.com/gorilla/context
+  version: 14f550f51af52180c2eefed15e5fd18d63c0a64a
+- name: github.com/gorilla/mux
+  version: e444e69cbd2e2e3e0749a2f3c717cec491552bbf
 - name: github.com/konsorten/go-windows-terminal-sequences
   version: 5c8c8bd35d3832f5d134ae1e1e375b69a4d25242
 - name: github.com/opencontainers/go-digest
   version: 279bed98673dd5bef374d3b6e4b09e2af76183bf
-- name: github.com/opencontainers/image-spec
-  version: 09950c5fb1bb6745e72aa26ecde0d540e35f5286
-  subpackages:
-  - specs-go
-  - specs-go/v1
 - name: github.com/sirupsen/logrus
   version: 91da99df23e3bad7f384338a5a8f636d04093d9a
+  subpackages:
+  - formatters/logstash
+- name: github.com/Sirupsen/logrus
+  version: 91da99df23e3bad7f384338a5a8f636d04093d9a
+  repo: git@github.com:/sirupsen/logrus
+  vcs: git
 - name: golang.org/x/crypto
   version: c10c31b5e94b6f7a0283272dc2bb27163dcea24b
   subpackages:
+  - bcrypt
+  - blowfish
+  - ocsp
   - ssh/terminal
+- name: golang.org/x/net
+  version: 4876518f9e71663000c348837735820161a42df7
+  subpackages:
+  - context
+  - context/ctxhttp
+  - http2
+  - http2/hpack
+  - internal/timeseries
+  - trace
 testImports: []
