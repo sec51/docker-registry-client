@@ -6,7 +6,8 @@ import (
 	"net/url"
 
 	"github.com/docker/distribution"
-	digest "github.com/opencontainers/go-digest"
+	"github.com/docker/distribution/digest"
+	// digest "github.com/opencontainers/go-digest"
 )
 
 func (registry *Registry) DownloadLayer(repository string, digest digest.Digest) (io.ReadCloser, error) {

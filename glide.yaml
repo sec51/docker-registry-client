@@ -5,8 +5,7 @@ import:
   subpackages:
   - manifest/schema1
   - manifest/schema2
-- package: github.com/opencontainers/go-digest
-  version: ~1.0.0-rc1
+  - digest
 - package: github.com/sirupsen/logrus
   version: master
   subpackages:
